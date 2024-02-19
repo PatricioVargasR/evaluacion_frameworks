@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hola! <span id="nombre"></span>
+    <script>
+        document.body.onload = obtenernombre;
+        function obtenernombre(){
+            var session = window.sessionStorage;
+            nuevo = session.getItem("Alumno:");
+            document.getElementById("nombre").innerText = nuevo;
+        }
+    </script>
+</body>
+</html>
